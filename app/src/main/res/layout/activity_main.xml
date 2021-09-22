@@ -278,5 +278,7 @@
                 android:padding="5dp"
                 android:text="2.2046 pound" />
         </TableRow>
+
     </TableLayout>
+
 </RelativeLayout>
