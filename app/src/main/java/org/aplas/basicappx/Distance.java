@@ -8,35 +8,35 @@ public class Distance {
         meter = 0;
     }
 
-    void setMeter(double a){
+    public void setMeter(double a){
         meter = a;
     }
 
-    void setInch(double a){
+    public void setInch(double a){
         meter = a / 39.3701;
     }
 
-    void setMile(double a){
+    public void setMile(double a){
         meter = a / 0.000621371;
     }
 
-    void setFoot(double a){
+    public void setFoot(double a){
         meter = a / 3.28084;
     }
 
-    double getMeter(){
+    public double getMeter(){
         return meter;
     }
 
-    double getInch(){
+    public double getInch(){
         return meter * 39.3701;
     }
 
-    double getMile(){
+    public double getMile(){
         return meter * 0.000621371;
     }
 
-    double getFoot(){
+    public double getFoot(){
         return meter * 3.28084;
     }
 

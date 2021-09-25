@@ -8,27 +8,27 @@ public class Temperature {
         celcius = 0;
     }
 
-    void setCelcius(double a){
+    public void setCelcius(double a){
         celcius = a;
     }
 
-    void setFahrenheit(double a){
+    public void setFahrenheit(double a){
         celcius = (a - 32) / 9 * 5;
     }
 
-    void setKelvins(double a){
+    public void setKelvins(double a){
         celcius = a - 273.15;
     }
 
-    double getCelcius(){
+    public double getCelcius(){
         return celcius;
     }
 
-    double getFahrenheit(){
+    public double getFahrenheit(){
         return (celcius * 9/5) + 32;
     }
 
-    double getKelvins(){
+    public double getKelvins(){
         return celcius + 273.15;
     }
 
