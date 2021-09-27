@@ -108,6 +108,13 @@ public class MainActivity extends AppCompatActivity {
                 });
     }
 
+    public void doConvert(){
+        RadioButton selectedType = (RadioButton)findViewById(unitType.getCheckedRadioButtonId());
+        double valueDouble = Double.parseDouble(inputTxt.getText().toString());
+        double result = convertUnit(selectedType.getText().toString(), unitOri.getSelectedItem().toString(), unitConv.getSelectedItem().toString(), valueDouble);
+        outputTxt.setText(strResult(result, roundBox.isChecked()));
+    }
+
     @Override
     protected void onStart() {
         super.onStart();
